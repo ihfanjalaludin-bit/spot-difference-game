@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Park Pair — Spot the Difference</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #1d2b1f; overflow: hidden; }
+  canvas { display: block; width: 100vw; height: 100vh; cursor: pointer; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>
+</head>
+<body>
+<canvas id="board" width="1280" height="800"></canvas>
+<p id="status" class="sr-only" role="status" aria-live="polite">Park Pair, a spot the difference game. Loading.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
